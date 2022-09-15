@@ -1,4 +1,4 @@
-#import "../lib/math.mligo" "Math"
+#import "./math.mligo" "Math"
 
 module Address = struct 
 

@@ -1,4 +1,4 @@
-#import "../lib/float.mligo" "Float"
+#import "./float.mligo" "Float"
 
 type chebychev_coef = Float.t list 
 

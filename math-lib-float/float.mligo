@@ -1,4 +1,4 @@
-#import "../lib/math.mligo" "Math"
+#import "math-lib-core/math.mligo" "Math"
 
 // n = a * 10^b
 type t = { val : int; pow: int }

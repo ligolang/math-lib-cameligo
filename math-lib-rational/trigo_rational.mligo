@@ -1,4 +1,4 @@
-#import "../lib/rational.mligo" "Rational"
+#import "./rational.mligo" "Rational"
 
 type chebychev_intervals = Rational.t * Rational.t
 type chebychev_coef = Rational.t list 

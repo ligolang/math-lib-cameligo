@@ -1,4 +1,4 @@
-#import "../lib/math.mligo" "Math"
+#import "math-lib-core/math.mligo" "Math"
 
 // n = p / q
 type t = { p : int; q: int }
