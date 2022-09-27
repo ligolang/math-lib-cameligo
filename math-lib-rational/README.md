@@ -1,4 +1,4 @@
-# math-lib-cameligo
+# math-lib-rational
 
 This repository is meant to provide support of floating-point numbers and extra features related to the native type `Bytes`.
 
@@ -26,9 +26,3 @@ make test
 - [ ] Fix Makefile
 - [ ] Covert code & test to OCaml & benchmark
 - [ ] Change the readme to communicate for this
-
-It has 4 libs
-1. math-lib (the complete package)
-2. math-lib-core (common math functions)
-3. math-lib-float (floating point numbers arithmetic operations + trigonomerty package)
-4. math-lib-rational (rational numbers arithmetic operations + trigonometry)
