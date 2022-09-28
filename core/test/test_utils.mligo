@@ -1,5 +1,4 @@
-#import "../lib/utils.mligo" "Utils"
-
+#import "../utils.mligo" "Utils"
 
 let test =
 
@@ -98,7 +97,7 @@ let test =
         let value : bool option = Utils.Bytes.Packed.is_internal_address_implicit(payload) in
         let () = match value with
         | None -> assert(true)
-        | Some b -> failwith("a None was expected")
+        | Some _ -> failwith("a None was expected")
         in
 
 

@@ -1,5 +1,5 @@
-#import "./core/math.mligo" "MathCore"
-#import "./core/utils.mligo" "MathUtils"
+#import "./core/math.mligo" "Core"
+#import "./core/utils.mligo" "Utils"
 
 #import "./float/float.mligo" "Float"
 #import "./float/trigo_float.mligo" "TrigoFloat"

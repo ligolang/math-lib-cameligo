@@ -22,6 +22,7 @@ let pi_sixth : Rational.t = Rational.div pi (Rational.new 6)
 let sqrt_2 : Rational.t = {p=1414213562373095048801688724209; q=1000000000000000000000000000000}
 let sqrt_3 : Rational.t = {p=17320508075688772935; q=10000000000000000000}
 
+[@private]
 let chebychev_lookup_intervals : chebychev_intervals list = [
     // (zero,pi_quarter);
     // (pi_quarter,pi_half);
@@ -36,7 +37,7 @@ let chebychev_lookup_intervals : chebychev_intervals list = [
 
 //0.0, 1.5707963267948966, 0.6021947012555463, 0.513625166679107, -0.10354634426296383, -0.013732034234358675, 0.0013586698380902013, 0.00010726309440570181, -7.046296793891682e-06, -3.963902510811801e-07, 1.94995972671759e-08, 8.522923894416223e-10, -3.351717514643582e-11, -1.1987008607938776e-12, 3.835820550079916e-14, 4.163336342344337e-16, -6.591949208711867e-16, -1.9290125052862095e-15
 
-
+[@private]
 let chebychev_lookup_table : chebychev = Map.literal [
     // ((zero,pi_quarter),({p=0;q=1}, {p=0;q=1}, {p=0;q=1}) );
     // ((pi_quarter,pi_half),({p=0;q=1}, {p=0;q=1}, {p=0;q=1}) );
@@ -65,6 +66,7 @@ let chebychev_lookup_table : chebychev = Map.literal [
     )
 ]
 
+[@private]
 let find_chebychev_interval(p: Rational.t) : chebychev_intervals option =
     let rec find (x, lst : Rational.t * chebychev_intervals list) : chebychev_intervals option =
         match lst with
@@ -119,6 +121,7 @@ let sin(a, n : Rational.t * nat) : Rational.t =
     in
     compute(2n, y0, t1, t0, n, coef_from_2)
 
+[@private]
 let rec sinus_symetry(sign, a, n : Rational.t * Rational.t * nat) : Rational.t =
     // sin(-a) = - sin(a)
     if (Rational.lt a zero) then

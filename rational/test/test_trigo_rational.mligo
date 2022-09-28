@@ -1,6 +1,6 @@
-#import "../lib/math.mligo" "Math"
-#import "../lib/rational.mligo" "Rational"
-#import "../lib/trigo_rational.mligo" "Trigo"
+#import "math-lib-core/math.mligo" "Math"
+#import "../rational.mligo" "Rational"
+#import "../trigo_rational.mligo" "Trigo"
 
 
 let test =

@@ -44,7 +44,7 @@ let modulo (a : t) (b : t) : t =
     in
     compute(a, b)
 
-[@inline]
+[@inline] [@private]
 let resolve (a: t) (prec: nat) : int =
     let input : t = if (a.p < 0) then
         { p= a.p * -1; q=a.q * -1 }

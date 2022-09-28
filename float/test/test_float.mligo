@@ -1,5 +1,4 @@
-#import "../lib/float.mligo" "Float"
-
+#import "../float.mligo" "Float"
 
 let test =
 
