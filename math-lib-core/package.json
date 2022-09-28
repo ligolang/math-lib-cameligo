@@ -5,6 +5,7 @@
     "directories": {
       "test": "test"
     },
+    "main": "math.mligo",
     "repository": {
       "type": "git",
       "url": "git+https://github.com/ligolang/math-lib-cameligo.git",

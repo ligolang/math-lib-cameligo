@@ -18,11 +18,3 @@ A makefile is provided to launch tests.
 ```
 make test
 ```
-
-- [ ] Split into 3 things - core, float, rational & both
-- [ ] Add MIT licence
-- [ ] Publish 3 packages
-- [ ] Fix unicode issue by using lib
-- [ ] Fix Makefile
-- [ ] Covert code & test to OCaml & benchmark
-- [ ] Change the readme to communicate for this
