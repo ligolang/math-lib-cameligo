@@ -9,7 +9,7 @@
     "repository": {
       "type": "git",
       "url": "git+https://github.com/ligolang/math-lib-cameligo.git",
-      "directory": "math-lib-core"
+      "directory": "core"
     },
     "keywords": [
       "tezos",
