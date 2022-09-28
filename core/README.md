@@ -1,6 +1,6 @@
 # math-lib-core
 
-This repository provides a `Math` & `Utils` module which exports the following functions
+This repository provides a `Math` & `Utils` modules which export the following functions.
 
 `Math` module
 1. `isqrt`     - `nat -> nat`

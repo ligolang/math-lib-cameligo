@@ -1,6 +1,6 @@
 {
     "name": "math-lib-core",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A math basic library for LIGO",
     "directories": {
       "test": "test"

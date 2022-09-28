@@ -11,7 +11,6 @@ let new (val : int) (pow: int) : t =
 let inverse (a : t) : t = 
     { val= 1n * Math.power(10n, 18n) / a.val; pow=(a.pow * -1) - 18n }
 
-
 [@inline]
 let add (a : t) (b : t) : t = 
     if (a.pow < b.pow) then
@@ -84,7 +83,7 @@ let modulo (a : t) (b : t) : t =
     in
     compute(a, b)
 
-[@inline]
+[@inline] [@private]
 let resolve (a: t) (prec: nat) : int =
     let resolve_positif (a: t) (prec: nat) : int =
         if (a.pow > 0) then
