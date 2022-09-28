@@ -7,6 +7,7 @@ help:
 	@echo  '  test            - Run integration tests (written in Ligo)'
 	@echo  ''
 
+.PHONY: test
 test: test_ligo_float test_ligo_trigo_float
 
 test_ligo_float: test/test_float.mligo 

@@ -1,0 +1,64 @@
+{
+  "checksum": "637f7034f66990c8817691f930c30f7b",
+  "root": "math-lib@link-dev:./package.json",
+  "node": {
+    "math-lib-rational@1.0.1@d41d8cd9": {
+      "id": "math-lib-rational@1.0.1@d41d8cd9",
+      "name": "math-lib-rational",
+      "version": "1.0.1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://beta.packages.ligolang.org/-/api/math-lib-rational/-/math-lib-rational-1.0.1.tgz#sha1:5bd9fce2e8d8719549e24f5dd95f3db6c39ab8dd"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "math-lib-float@1.0.2@d41d8cd9": {
+      "id": "math-lib-float@1.0.2@d41d8cd9",
+      "name": "math-lib-float",
+      "version": "1.0.2",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://beta.packages.ligolang.org/-/api/math-lib-float/-/math-lib-float-1.0.2.tgz#sha1:5131b1e04e960433bbefffac223c595373ca8cb0"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "math-lib-core@1.0.1@d41d8cd9": {
+      "id": "math-lib-core@1.0.1@d41d8cd9",
+      "name": "math-lib-core",
+      "version": "1.0.1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://beta.packages.ligolang.org/-/api/math-lib-core/-/math-lib-core-1.0.1.tgz#sha1:21cea6fe9e924dad8023195554e4de48a6262a9a"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "math-lib@link-dev:./package.json": {
+      "id": "math-lib@link-dev:./package.json",
+      "name": "math-lib",
+      "version": "link-dev:./package.json",
+      "source": {
+        "type": "link-dev",
+        "path": ".",
+        "manifest": "package.json"
+      },
+      "overrides": [],
+      "dependencies": [
+        "math-lib-rational@1.0.1@d41d8cd9", "math-lib-float@1.0.2@d41d8cd9",
+        "math-lib-core@1.0.1@d41d8cd9"
+      ],
+      "devDependencies": []
+    }
+  }
+}

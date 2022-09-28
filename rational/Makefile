@@ -7,6 +7,7 @@ help:
 	@echo  '  test            - Run integration tests (written in Ligo)'
 	@echo  ''
 
+.PHONY: test
 test: test_ligo_trigo_rational test_ligo_trigo_rational
 
 test_ligo_trigo_rational: test/test_trigo_rational.mligo 

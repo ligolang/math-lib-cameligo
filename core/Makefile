@@ -6,6 +6,7 @@ help:
 	@echo  'Usage:'
 	@echo  '  test            - Run integration tests (written in Ligo)'
 
+.PHONY: test
 test: test_ligo_utils test_ligo_math
 
 test_ligo_utils: test/test_utils.mligo 
