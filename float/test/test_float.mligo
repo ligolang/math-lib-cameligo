@@ -49,7 +49,6 @@ let test =
         let value_resolved : int = Float.resolve value 3n in
         let () = assert(value_resolved = 166) in
 
-
         Test.log("Test finished")
     in
     ()

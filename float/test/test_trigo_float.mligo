@@ -2,7 +2,6 @@
 #import "../float.mligo" "Float"
 #import "../trigo_float.mligo" "Trigo"
 
-
 let test =
 
     let _test_trigo_sinus = 
@@ -86,7 +85,7 @@ let test =
         let error_threshold = (Float.inverse (Float.new 1 12)) in
         let precision : nat = 11n in
         // cos²(a) + sin²(a) = 1
-        let () = Test.log("cos²(a) + sin²(a) = 1") in
+        let () = Test.log("cos^2(a) + sin^2(a) = 1") in
         let angle = Trigo.pi_half in
         let expected = (Float.new 1  0) in
         let cos_a = Trigo.cosinus(angle, precision) in
