@@ -13,7 +13,7 @@ let test =
         let angle = Trigo.zero in
         let expected = (Rational.new 0) in
         let diff = Rational.sub (Trigo.sinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -22,7 +22,7 @@ let test =
         let angle = Trigo.pi_half in
         let expected = (Rational.new 1) in
         let diff = Rational.sub (Trigo.sinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -31,7 +31,7 @@ let test =
         let angle = Trigo.pi in
         let expected = (Rational.new 0) in
         let diff = Rational.sub (Trigo.sinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -40,7 +40,7 @@ let test =
         let angle = Trigo.three_pi_half in
         let expected = (Rational.new (-1)) in
         let diff = Rational.sub (Trigo.sinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
         
@@ -49,7 +49,7 @@ let test =
         let angle = Trigo.two_pi in
         let expected = (Rational.new 0) in
         let diff = Rational.sub (Trigo.sinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -58,7 +58,7 @@ let test =
         let angle = Trigo.pi_quarter in
         let expected = (Rational.div Trigo.sqrt_2 (Rational.new 2)) in
         let diff = Rational.sub (Trigo.sinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
         
@@ -68,7 +68,7 @@ let test =
         let expected = (Rational.inverse (Rational.new 2)) in
         //let expected = (Rational.div Trigo.sqrt_3 (Rational.new 2)) in
         let diff = Rational.sub (Trigo.sinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -77,7 +77,7 @@ let test =
         let angle = Trigo.pi_third in
         let expected = (Rational.div Trigo.sqrt_3 (Rational.new 2)) in
         let diff = Rational.sub (Trigo.sinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -86,7 +86,7 @@ let test =
         let angle = Rational.sub (Rational.new 0) Trigo.pi_half in
         let expected = (Rational.new (-1)) in
         let diff = Rational.sub (Trigo.sinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -96,7 +96,7 @@ let test =
         let angle = Rational.sub Trigo.pi_half Trigo.two_pi in
         let expected = (Rational.new (1)) in
         let diff = Rational.sub (Trigo.sinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -110,7 +110,7 @@ let test =
         let angle = Trigo.zero in
         let expected = (Rational.new 1) in
         let diff = Rational.sub (Trigo.cosinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -119,7 +119,7 @@ let test =
         let angle = Trigo.pi_half in
         let expected = (Rational.new 0) in
         let diff = Rational.sub (Trigo.cosinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -128,7 +128,7 @@ let test =
         let angle = Trigo.pi in
         let expected = (Rational.new (-1)) in
         let diff = Rational.sub (Trigo.cosinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -137,7 +137,7 @@ let test =
         let angle = Trigo.three_pi_half in
         let expected = (Rational.new 0) in
         let diff = Rational.sub (Trigo.cosinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
         
@@ -146,7 +146,7 @@ let test =
         let angle = Trigo.two_pi in
         let expected = (Rational.new 1) in
         let diff = Rational.sub (Trigo.cosinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -155,7 +155,7 @@ let test =
         let angle = Trigo.pi_quarter in
         let expected = (Rational.div Trigo.sqrt_2 (Rational.new 2)) in
         let diff = Rational.sub (Trigo.cosinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
         
@@ -165,7 +165,7 @@ let test =
         let expected = (Rational.div Trigo.sqrt_3 (Rational.new 2)) in
         //let expected = (Rational.div Trigo.sqrt_3 (Rational.new 2)) in
         let diff = Rational.sub (Trigo.cosinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -174,7 +174,7 @@ let test =
         let angle = Trigo.pi_third in
         let expected = (Rational.inverse (Rational.new 2)) in
         let diff = Rational.sub (Trigo.cosinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -183,7 +183,7 @@ let test =
         let angle = Rational.sub (Rational.new 0) Trigo.pi_half in
         let expected = (Rational.new 0) in
         let diff = Rational.sub (Trigo.cosinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -193,7 +193,7 @@ let test =
         let angle = Rational.sub Trigo.pi_half Trigo.two_pi in
         let expected = (Rational.new 0) in
         let diff = Rational.sub (Trigo.cosinus(angle, precision)) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         //let () = Test.log(error) in
         let () = assert(Rational.lt diff error_threshold ) in
 
@@ -203,14 +203,14 @@ let test =
         let error_threshold = (Rational.inverse (Rational.new (int(Math.power(10n, 12n))))) in
         let precision : nat = 11n in
         // cos²(a) + sin²(a) = 1
-        let () = Test.log("cos²(a) + sin²(a) = 1") in
+        let () = Test.log("cos^2(a) + sin^2(a) = 1") in
         let angle = Trigo.pi_half in
         let expected = (Rational.new 1) in
         let cos_a = Trigo.cosinus(angle, precision) in
         let sin_a = Trigo.sinus(angle, precision) in
         let res = Rational.add (Rational.mul cos_a cos_a) (Rational.mul sin_a sin_a) in
         let diff = Rational.sub (res) expected in
-        let error = Rational.resolve diff 12n in
+        let _error = Rational.resolve diff 12n in
         let () = assert(Rational.lt diff error_threshold ) in
 
         Test.log("Test 'trigo (with rational)' finished")

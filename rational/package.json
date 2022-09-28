@@ -21,6 +21,7 @@
     "bugs": {
       "url": "https://github.com/ligolang/math-lib-cameligo/issues"
     },
-    "homepage": "https://github.com/ligolang/math-lib-cameligo#readme"
+    "homepage": "https://github.com/ligolang/math-lib-cameligo#readme",
+    "dependencies": { "math-lib-core": "^1.0.1" }
   }
   

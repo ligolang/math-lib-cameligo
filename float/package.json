@@ -1,10 +1,11 @@
 {
     "name": "math-lib-float",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A math library for LIGO with support for floating point numbers",
     "directories": {
       "test": "test"
     },
+    "main": "lib.mligo",
     "repository": {
       "type": "git",
       "url": "git+https://github.com/ligolang/math-lib-cameligo.git",

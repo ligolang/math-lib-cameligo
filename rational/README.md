@@ -1,16 +1,28 @@
 # math-lib-rational
 
-This repository is meant to provide support of floating-point numbers and extra features related to the native type `Bytes`.
+This library provides `Rational` & `TrigoFloat` modules which export the following funcitons.
 
-This library introduces a `bytes_to_nat` function that allows to convert bytes to nat. 
+`Rational` module
+1. `new`     - `int -> int -> Rational.t`
+2. `inverse` - `Rational.t -> Rational.t`
+3. `add`     - `Rational.t -> Rational.t -> Rational.t`
+4. `sub`     - `Rational.t -> Rational.t -> Rational.t`
+5. `lt`      - `Rational.t -> Rational.t -> bool`
+6. `lte`     - `Rational.t -> Rational.t -> bool`
+7. `gte`     - `Rational.t -> Rational.t -> bool`
+8. `gt`      - `Rational.t -> Rational.t -> bool`
+9. `mul`     - `Rational.t -> Rational.t -> Rational.t`
+10. `div`    - `Rational.t -> Rational.t -> Rational.t`
+11. `modulo` - `Rational.t -> Rational.t -> Rational.t`
 
-This library introduces a `is_implicit_account` function that allows to discriminate KT1 addersses and tz1 addresses. This function is available on the native type `address` and also on native type `bytes` (usefull when an `address` value is packed into bytes, with the `Byte.pack` function).
+`TrigoRational` module
+1. `sinus`   - `Rational.t * nat -> Rational.t`
+2. `cosinus` - `Rational.t * nat -> Rational.t`
 
-This library introduces 2 representations of floating-point numbers:
-- rationnal: where a number is represented by a couple (p, q) where n = p / q. All operations are applied in order to keep the number as a product and division of rationals.  
-- float: where a number is represented by a couple (a,b) where n = a * 10^b. The scientifc notation considers that the `a` is defined as a float betwen -10 and 10) and `b` is a `nat`. Since there is no native float type, the `a` is a `nat` and can be greater than 10. All operations are applied in order to keep the number as a couple (a,b) where n = a * 10^b.
 
-Basde on floating-point representation, this library introduces an implementation of trigonometric functions (cosinus, sinus). The implementation of sinus is based on Chebychev polynoms interpolation.
+The rationnal numbers are represented by a pair (p, q) where n = p / q. All operations are applied in order to keep the number as a product and division of rationals.  
+
+Based on rational numbers representation, this library introduces an implementation of trigonometric functions (cosinus, sinus). The implementation of sinus is based on Chebychev polynomials interpolation.
 
 ### Tests
 
