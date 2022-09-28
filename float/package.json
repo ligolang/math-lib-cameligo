@@ -1,6 +1,6 @@
 {
     "name": "math-lib-float",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "A math library for LIGO with support for floating point numbers",
     "directories": {
       "test": "test"
