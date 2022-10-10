@@ -1,0 +1,22 @@
+(lang dune 3.4)
+
+(name bench_ocaml)
+
+(generate_opam_files true)
+
+(source
+ (github ligolang/math-lib-cameligo))
+
+(authors "ligolang")
+
+(maintainers "Maintainer Name")
+
+(license LICENSE)
+
+(documentation https://url/to/documentation)
+
+(package
+ (name bench_ocaml)
+ (depends ocaml dune core core_bench))
+
+; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
