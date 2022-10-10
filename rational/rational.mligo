@@ -52,5 +52,3 @@ let resolve (a: t) (prec: nat) : int =
         a
     in
     (input.p * Math.power(10n, prec)) / input.q
-
-

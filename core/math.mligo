@@ -15,10 +15,16 @@ let isqrt (y: nat) =
     else
         0n
 
+let rec fast_power : nat -> nat -> nat -> nat = fun a b result ->
+    if b = 0n then result
+    else 
+        let result = if (b land 1n) = 1n then result * a else result in
+        let b = b lsr 1n in
+        let a = a * a in
+        fast_power a b result
+
 (** return x ^ y *)
-let power (x, y : nat * nat) : nat = 
-    let rec multiply(acc, elt, last: nat * nat * nat ) : nat = if last = 0n then acc else multiply(acc * elt, elt, abs(last - 1n)) in
-    multiply(1n, x, y)
+let power (x, y : nat * nat) : nat = fast_power x y 1n
 
 (** It computes the factorial n! for a given nat n. (i.e. n*(n-1)*(n-2)*...*1n ) *)
 let factorial (n : nat) : nat = 
