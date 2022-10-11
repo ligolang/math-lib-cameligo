@@ -223,7 +223,3 @@ let _test_trigo () =
   let () = assert (Rational.lt diff error_threshold) in
 
   Test.log "Test 'trigo (with rational)' finished"
-
-let _ = _test_trigo_sinus ()
-let _ = _test_trigo_cosinus ()
-let _ = _test_trigo_cosinus ()

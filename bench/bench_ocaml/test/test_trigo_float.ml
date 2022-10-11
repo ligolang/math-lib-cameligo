@@ -94,7 +94,3 @@ let _test_trigo () =
   let () = assert (Float.lt diff error_threshold) in
 
   Test.log "Test 'trigo (with float)' finished"
-
-let _ = _test_trigo_sinus ()
-let _ = _test_trigo_cosinus ()
-let _ = _test_trigo ()

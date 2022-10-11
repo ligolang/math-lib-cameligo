@@ -21,6 +21,3 @@ let _test_factorial () =
   let () = assert (Math.factorial (Z.of_int 6) = Z.of_int 720) in
 
   Test.log "Test 'factorial' finished"
-
-let _ = _test_isqrt ()
-let _ = _test_factorial ()

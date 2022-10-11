@@ -1,8 +1,14 @@
-(tests
- (names
+(library
+ (name math_lib_tests)
+ (libraries math_lib)
+ (modules
   test_core
   test_float
   test_rational
   test_trigo_float
-  test_trigo_rational)
- (libraries math_lib))
+  test_trigo_rational))
+
+(tests
+ (names test_lib)
+ (libraries math_lib math_lib_tests)
+ (modules test_lib))

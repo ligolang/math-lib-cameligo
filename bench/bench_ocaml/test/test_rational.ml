@@ -44,5 +44,3 @@ let _test_rational () =
   let () = assert (value_resolved = Z.of_int 666) in
 
   Test.log "Test finished"
-
-let _ = _test_rational ()

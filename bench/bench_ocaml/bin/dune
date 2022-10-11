@@ -1,4 +1,4 @@
 (executable
  (public_name bench_ocaml)
  (name main)
- (libraries math_lib))
+ (libraries math_lib core_unix.command_unix core_bench))
