@@ -11,6 +11,7 @@ depends: [
   "dune" {>= "3.4"}
   "core"
   "core_bench"
+  "zarith"
   "odoc" {with-doc}
 ]
 build: [

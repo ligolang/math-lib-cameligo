@@ -17,6 +17,6 @@
 
 (package
  (name bench_ocaml)
- (depends ocaml dune core core_bench))
+ (depends ocaml dune core core_bench zarith))
 
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project

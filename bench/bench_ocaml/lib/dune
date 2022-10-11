@@ -1,2 +1,3 @@
 (library
- (name math_lib))
+ (name math_lib)
+ (libraries zarith))
