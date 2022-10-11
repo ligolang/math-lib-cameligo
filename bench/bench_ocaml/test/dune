@@ -1,3 +1,8 @@
 (tests
- (names test_core test_float)
+ (names
+  test_core
+  test_float
+  test_rational
+  test_trigo_float
+  test_trigo_rational)
  (libraries math_lib))

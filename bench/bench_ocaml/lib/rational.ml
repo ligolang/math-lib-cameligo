@@ -1,13 +1,9 @@
 open Common
 
-(* #import "math-lib-core/math.mligo" "Math" *)
-
 (* // n = p / q *)
 type t = { p : int; q : int }
 
-let compare a b =
-  if a.q = b.q then Z.compare a.p b.p else Z.compare (a.p * b.q) (b.p * a.q)
-
+let compare a b = Z.compare (a.p * b.q) (b.p * a.q)
 let new' (init : int) : t = { p = init; q = Z.one }
 let inverse (a : t) : t = { p = a.q; q = a.p }
 let lt (a : t) (b : t) : bool = a.p * b.q < a.q * b.p

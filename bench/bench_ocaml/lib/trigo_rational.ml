@@ -151,7 +151,7 @@ let find_chebychev_interval (p : Rational.t) : chebychev_intervals option =
   let rec find ((x, lst) : Rational.t * chebychev_intervals list) :
       chebychev_intervals option =
     match lst with
-    | [] -> (None : chebychev_intervals option)
+    | [] -> None
     | ((hd1, _) as hd) :: tl ->
         if Rational.lte x hd1 then Some hd else find (x, tl)
   in
