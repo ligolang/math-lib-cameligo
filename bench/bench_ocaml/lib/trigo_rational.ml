@@ -152,7 +152,7 @@ let find_chebychev_interval (p : Rational.t) : chebychev_intervals option =
       chebychev_intervals option =
     match lst with
     | [] -> None
-    | ((hd1, _) as hd) :: tl ->
+    | ((_, hd1) as hd) :: tl ->
         if Rational.lte x hd1 then Some hd else find (x, tl)
   in
   find (p, chebychev_lookup_intervals)
