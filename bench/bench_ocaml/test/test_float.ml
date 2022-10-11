@@ -1,7 +1,7 @@
 module Float = Math_lib.Float
 module Test = Math_lib.Common.Test
 
-let _test_scientific () =
+let _test_scientific ?(log = false) () =
   let a : Float.t = Float.inverse (Float.new' (Z.of_int 6) Z.zero) in
   let value_resolved = Float.resolve a (Z.of_int 3) in
   let () = assert (value_resolved = Z.of_int 166) in
@@ -47,4 +47,6 @@ let _test_scientific () =
   let value_resolved = Float.resolve value (Z.of_int 3) in
   let () = assert (value_resolved = Z.of_int 166) in
 
-  Test.log "Test finished"
+  if log then Test.log "Test finished"
+
+let all ?log () = _test_scientific ?log ()

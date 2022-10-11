@@ -4,17 +4,9 @@ module Rational = Math_lib_tests.Test_rational
 module Trigo_float = Math_lib_tests.Test_trigo_float
 module Trigo_rational = Math_lib_tests.Test_trigo_rational
 
-let _ = Core._test_isqrt ()
-let _ = Core._test_factorial ()
-
-let _ = Float._test_scientific ()
-
-let _ = Rational._test_rational ()
-
-let _ = Trigo_float._test_trigo_sinus ()
-let _ = Trigo_float._test_trigo_cosinus ()
-let _ = Trigo_float._test_trigo ()
-
-let _ = Trigo_rational._test_trigo_sinus ()
-let _ = Trigo_rational._test_trigo_cosinus ()
-let _ = Trigo_rational._test_trigo_cosinus ()
+let log = true
+let _ = Core.all ~log ()
+let _ = Float.all ~log ()
+let _ = Rational.all ~log ()
+let _ = Trigo_float.all ~log ()
+let _ = Trigo_rational.all ~log ()

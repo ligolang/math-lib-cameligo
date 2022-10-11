@@ -1,7 +1,7 @@
 module Rational = Math_lib.Rational
 module Test = Math_lib.Common.Test
 
-let _test_rational () =
+let _test_rational ?(log = false) () =
   let a = Rational.new' (Z.of_int 6) in
   let a = Rational.inverse a in
   let value_resolved = Rational.resolve a (Z.of_int 3) in
@@ -43,4 +43,6 @@ let _test_rational () =
   let value_resolved = Rational.resolve value (Z.of_int 3) in
   let () = assert (value_resolved = Z.of_int 666) in
 
-  Test.log "Test finished"
+  if log then Test.log "Test finished"
+
+let all ?log () = _test_rational ?log ()
