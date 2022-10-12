@@ -1,7 +1,7 @@
 ligo_compiler=docker run --rm -v "$$PWD":"$$PWD" -w "$$PWD" ligolang/ligo:0.42.0
 
 protocol_opt=--protocol ithaca
-JSON_OPT=--michelson-format json
+json_opt=--michelson-format json
 
 help:
 	@echo  'Usage:'
