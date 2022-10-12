@@ -14,8 +14,8 @@ let _ =
   Command_unix.run
     (Bench.make_command
        [
-         Bench.Test.create ~name:"Trigonomery Float lig" (fun () ->
+         Bench.Test.create ~name:"Trigonomery Float lib" (fun () ->
              Math_lib_tests.Test_trigo_float.all ());
-         Bench.Test.create ~name:"Trigonomery Rational lig" (fun () ->
+         Bench.Test.create ~name:"Trigonomery Rational lib" (fun () ->
              Math_lib_tests.Test_trigo_rational.all ());
        ])
