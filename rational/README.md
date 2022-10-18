@@ -20,7 +20,7 @@ This library provides `Rational` & `TrigoFloat` modules which export the followi
 2. `cosinus` - `Rational.t * nat -> Rational.t`
 
 
-The rationnal numbers are represented by a pair (p, q) where n = p / q. All operations are applied in order to keep the number as a product and division of rationals.  
+The rational numbers are represented by a pair (p, q) where n = p / q. All operations are applied in order to keep the number as a product and division of rationals.  
 
 Based on rational numbers representation, this library introduces an implementation of trigonometric functions (cosinus, sinus). The implementation of sinus is based on Chebychev polynomials interpolation.
 

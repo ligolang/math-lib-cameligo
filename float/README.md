@@ -19,7 +19,7 @@ This library provides `Float` & `TrigoFloat` modules which export the following 
 1. `sinus`   - `Float.t * nat -> Float.t`
 2. `cosinus` - `Float.t * nat -> Float.t`
 
-The floating poing numbers are represented by a pair (a,b) where n = a * 10^b. The scientifc notation considers that the `a` is defined as a float betwen -10 and 10) and `b` is a `nat`. Since there is no native float type, the `a` is a `nat` and can be greater than 10. All operations are applied in order to keep the number as a pair (a,b) where n = a * 10^b.
+The floating poing numbers are represented by a pair (a,b) where n = a * 10^b. The scientifc notation considers that the `a` is defined as a float between -10 and 10) and `b` is a `nat`. Since there is no native float type, the `a` is a `nat` and can be greater than 10. All operations are applied in order to keep the number as a pair (a,b) where n = a * 10^b.
 
 Basde on floating-point representation, this library introduces an implementation of trigonometric functions (cosinus, sinus). The implementation of sinus is based on Chebychev polynoms interpolation.
 
