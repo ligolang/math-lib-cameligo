@@ -32,10 +32,10 @@ let factorial (n : nat) : nat =
         if (i < 2n) then acc else fact(acc * i, abs(i - 1n)) in
     fact(1n, n)
 
-let min (a: nat) (b: nat) : nat =
+let min (a, b: nat * nat) : nat =
     if (a < b) then a else b
 
-let max (a: nat) (b: nat) : nat =
+let max (a, b: nat * nat) : nat =
     if (a > b) then a else b
 
 // TODO : optimize log algorithm !

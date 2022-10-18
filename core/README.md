@@ -6,8 +6,8 @@ This repository provides a `Math` & `Utils` modules which export the following f
 1. `isqrt`     - `nat -> nat`
 2. `power`     - `nat * nat -> nat`
 3. `factorial` - `nat -> nat`
-4. `min`       - `nat -> nat -> nat`
-5. `max`       - `nat -> nat -> nat`
+4. `min`       - `nat * nat -> nat`
+5. `max`       - `nat * nat -> nat`
 6. `log_10`    - `nat -> nat`
 
 `Utils` module
