@@ -1,4 +1,4 @@
-#import "../lib/math.mligo" "Math"
+#import "math-lib-core/math.mligo" "Math"
 
 // n = a * 10^b
 type t = { val : int; pow: int }
@@ -10,7 +10,6 @@ let new (val : int) (pow: int) : t =
 [@inline]
 let inverse (a : t) : t = 
     { val= 1n * Math.power(10n, 18n) / a.val; pow=(a.pow * -1) - 18n }
-
 
 [@inline]
 let add (a : t) (b : t) : t = 
@@ -84,7 +83,7 @@ let modulo (a : t) (b : t) : t =
     in
     compute(a, b)
 
-[@inline]
+[@inline] [@private]
 let resolve (a: t) (prec: nat) : int =
     let resolve_positif (a: t) (prec: nat) : int =
         if (a.pow > 0) then

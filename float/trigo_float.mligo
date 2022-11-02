@@ -1,4 +1,4 @@
-#import "../lib/float.mligo" "Float"
+#import "./float.mligo" "Float"
 
 type chebychev_coef = Float.t list 
 
@@ -67,6 +67,7 @@ let sin(a, n : Float.t * nat) : Float.t =
     in
     compute(2n, y0, t1, t0, n, coef_from_2)
 
+[@private]
 let rec sinus_symetry(sign, a, n : Float.t * Float.t * nat) : Float.t =
     // sin(-a) = - sin(a)
     if (Float.lt a zero) then

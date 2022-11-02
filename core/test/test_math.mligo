@@ -1,7 +1,4 @@
-#import "../lib/math.mligo" "Math"
-#import "../lib/float.mligo" "Float"
-#import "../lib/trigo_float.mligo" "Trigo"
-
+#import "../math.mligo" "Math"
 
 let test =
 

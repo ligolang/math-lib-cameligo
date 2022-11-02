@@ -1,0 +1,28 @@
+{
+    "name": "math-lib-rational",
+    "version": "1.0.2",
+    "description": "A math library for LIGO with support for Rational numbers",
+    "directories": {
+      "test": "test"
+    },
+    "main": "lib.mligo",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ligolang/math-lib-cameligo.git",
+      "directory": "rational"
+    },
+    "keywords": [
+      "tezos",
+      "ligo",
+      "math",
+      "rational"
+    ],
+    "author": "ligoLANG <https://ligolang.org/>",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/ligolang/math-lib-cameligo/issues"
+    },
+    "homepage": "https://github.com/ligolang/math-lib-cameligo#readme",
+    "dependencies": { "math-lib-core": "^1.0.1" }
+  }
+  

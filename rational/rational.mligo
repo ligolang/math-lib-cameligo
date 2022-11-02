@@ -1,4 +1,4 @@
-#import "../lib/math.mligo" "Math"
+#import "math-lib-core/math.mligo" "Math"
 
 // n = p / q
 type t = { p : int; q: int }
@@ -44,7 +44,7 @@ let modulo (a : t) (b : t) : t =
     in
     compute(a, b)
 
-[@inline]
+[@inline] [@private]
 let resolve (a: t) (prec: nat) : int =
     let input : t = if (a.p < 0) then
         { p= a.p * -1; q=a.q * -1 }
@@ -52,5 +52,3 @@ let resolve (a: t) (prec: nat) : int =
         a
     in
     (input.p * Math.power(10n, prec)) / input.q
-
-

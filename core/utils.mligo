@@ -1,4 +1,4 @@
-#import "../lib/math.mligo" "Math"
+#import "./math.mligo" "Math"
 
 module Address = struct 
 
@@ -25,10 +25,9 @@ module Bytes = struct
             ((Bytes.length (Bytes.sub 6n 22n pack_elt)) = 22n)
 
         let is_internal_address_implicit(candidat: bytes) : bool option = 
-            if (is_internal_address(candidat)) then
-                Some ( (Bytes.sub 6n 1n candidat) = 0x00 )
-            else
-                (None : bool option)
+            if (is_internal_address(candidat)) 
+            then Some ( (Bytes.sub 6n 1n candidat) = 0x00 )
+            else None
 
     end
 
@@ -61,6 +60,7 @@ module Bytes = struct
 
     module Conversion = struct 
 
+        [@private]
         let byte_to_nat(hexa : bytes) : nat =
             let _check_size : unit = assert_with_error (Bytes.length hexa = 1n) "Can only convert 1 byte" in    
             if hexa = 0x00 then 0n

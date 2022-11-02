@@ -1,5 +1,4 @@
-#import "../lib/float.mligo" "Float"
-
+#import "../float.mligo" "Float"
 
 let test =
 
@@ -49,7 +48,6 @@ let test =
         //let () = assert(value = { p=2; q=3 }) in
         let value_resolved : int = Float.resolve value 3n in
         let () = assert(value_resolved = 166) in
-
 
         Test.log("Test finished")
     in

@@ -15,10 +15,16 @@ let isqrt (y: nat) =
     else
         0n
 
+let rec fast_power : nat -> nat -> nat -> nat = fun a b result ->
+    if b = 0n then result
+    else 
+        let result = if (b land 1n) = 1n then result * a else result in
+        let b = b lsr 1n in
+        let a = a * a in
+        fast_power a b result
+
 (** return x ^ y *)
-let power (x, y : nat * nat) : nat = 
-    let rec multiply(acc, elt, last: nat * nat * nat ) : nat = if last = 0n then acc else multiply(acc * elt, elt, abs(last - 1n)) in
-    multiply(1n, x, y)
+let power (x, y : nat * nat) : nat = fast_power x y 1n
 
 (** It computes the factorial n! for a given nat n. (i.e. n*(n-1)*(n-2)*...*1n ) *)
 let factorial (n : nat) : nat = 
@@ -26,10 +32,10 @@ let factorial (n : nat) : nat =
         if (i < 2n) then acc else fact(acc * i, abs(i - 1n)) in
     fact(1n, n)
 
-let min (a: nat) (b: nat) : nat =
+let min (a, b: nat * nat) : nat =
     if (a < b) then a else b
 
-let max (a: nat) (b: nat) : nat =
+let max (a, b: nat * nat) : nat =
     if (a > b) then a else b
 
 // TODO : optimize log algorithm !

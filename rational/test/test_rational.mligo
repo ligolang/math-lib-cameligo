@@ -1,4 +1,4 @@
-#import "../lib/rational.mligo" "Rational"
+#import "../rational.mligo" "Rational"
 
 
 let test =
