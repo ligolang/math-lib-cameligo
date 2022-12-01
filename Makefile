@@ -5,15 +5,9 @@ PROTOCOL_OPT?=
 help:
 	@echo  'Usage:'
 	@echo  '  test            - Run integration tests (written in LIGO)'
-	@echo  '  install         - Install LIGO dependencies'
 	@echo  ''
 
-.PHONY: install test
-
-install:
-	make -C float $@
-	make -C rational $@
-	@$(ligo_compiler) install
+.PHONY: test
 
 test:
 	make -C core $@
