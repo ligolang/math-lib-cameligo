@@ -1,4 +1,4 @@
-#import "math-lib-core/math.mligo" "Math"
+#import "../../core/math.mligo" "Math"
 #import "../rational.mligo" "Rational"
 #import "../trigo_rational.mligo" "Trigo"
 

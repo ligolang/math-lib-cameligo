@@ -1,6 +1,6 @@
 {
   "name": "math-lib",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A math library for LIGO with support for Float & Rational numbers",
   "directories": {
     "test": "test"
@@ -22,10 +22,5 @@
   "bugs": {
     "url": "https://github.com/ligolang/math-lib-cameligo/issues"
   },
-  "homepage": "https://github.com/ligolang/math-lib-cameligo#readme",
-  "dependencies": {
-    "math-lib-core": "1.0.2",
-    "math-lib-float": "1.0.4",
-    "math-lib-rational": "1.0.3"
-  }
+  "homepage": "https://github.com/ligolang/math-lib-cameligo#readme"
 }
