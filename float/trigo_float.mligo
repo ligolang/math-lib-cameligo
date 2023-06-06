@@ -2,12 +2,12 @@
 
 type chebychev_coef = Float.t list 
 
-let zero : Float.t = {val=0 ; pow=0}
-let one : Float.t = {val=1; pow=0}
-let minus_one : Float.t = {val=-1; pow=0}
-let two : Float.t = {val=2; pow=0}
+let zero : Float.t = {value=0 ; pow=0}
+let one : Float.t = {value=1; pow=0}
+let minus_one : Float.t = {value=-1; pow=0}
+let two : Float.t = {value=2; pow=0}
 //PI = 1.414213562373095048801688724209698078569671875376948073176679737990732478462107038850387534327641572735013846230912297024924836055850737212644121497099935831413222665927505592755799950501152782060571
-let pi : Float.t = {val=31415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679 ; pow=-100}
+let pi : Float.t = {value=31415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679 ; pow=-100}
 let two_pi : Float.t = Float.mul pi (Float.new 2 0)
 let pi_half : Float.t = Float.div pi (Float.new 2 0)
 let pi_quarter : Float.t = Float.div pi (Float.new 4 0)
@@ -18,8 +18,8 @@ let seven_pi_quarter : Float.t = Float.mul pi_quarter (Float.new 7 0)
 let pi_third : Float.t = Float.div pi (Float.new 3 0)
 let pi_sixth : Float.t = Float.div pi (Float.new 6 0)
 
-let sqrt_2 : Float.t = {val=1414213562373095048801688724209; pow=-30}
-let sqrt_3 : Float.t = {val=17320508075688772935; pow=-19}
+let sqrt_2 : Float.t = {value=1414213562373095048801688724209; pow=-30}
+let sqrt_3 : Float.t = {value=17320508075688772935; pow=-19}
 
 (* computes sinus for an ange between zero and half_pi *)
 let sin(a, n : Float.t * nat) : Float.t = 
@@ -33,19 +33,19 @@ let sin(a, n : Float.t * nat) : Float.t =
         (Float.div (Float.sub pi_half zero) (two))
     ) in
     let coef : chebychev_coef = [ 
-            {val=6021947012555463;pow=-16};
-            {val=513625166679107;pow=-15};
-            {val=-10354634426296383;pow=-17};
-            {val=-13732034234358675;pow=-18};
-            {val=13586698380902013;pow=-19};
-            {val=10726309440570181;pow=-20};
-            {val=-7046296793891682;pow=-21};
-            {val=-3963902510811801;pow=-22};
-            {val=194995972671759;pow=-22};
-            {val=8522923894416223;pow=-25};
-            {val=-3351717514643582;pow=-26};
-            {val=-11987008607938776;pow=-28};
-            {val=3835820550079916;pow=-29};
+            {value=6021947012555463;pow=-16};
+            {value=513625166679107;pow=-15};
+            {value=-10354634426296383;pow=-17};
+            {value=-13732034234358675;pow=-18};
+            {value=13586698380902013;pow=-19};
+            {value=10726309440570181;pow=-20};
+            {value=-7046296793891682;pow=-21};
+            {value=-3963902510811801;pow=-22};
+            {value=194995972671759;pow=-22};
+            {value=8522923894416223;pow=-25};
+            {value=-3351717514643582;pow=-26};
+            {value=-11987008607938776;pow=-28};
+            {value=3835820550079916;pow=-29};
         ]
     in
 
