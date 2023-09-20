@@ -83,7 +83,7 @@ let modulo (a : t) (b : t) : t =
     in
     compute(a, b)
 
-[@inline] [@private]
+[@inline]
 let resolve (a: t) (prec: nat) : int =
     let resolve_positif (a: t) (prec: nat) : int =
         if (a.pow > 0) then

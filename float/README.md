@@ -3,17 +3,18 @@
 This library provides `Float` & `TrigoFloat` modules which export the following funcitons.
 
 `Float` module
-1. `new`     - `int -> int -> Float.t`
-2. `inverse` - `Float.t -> Float.t`
-3. `add`     - `Float.t -> Float.t -> Float.t`
-4. `sub`     - `Float.t -> Float.t -> Float.t`
-5. `lt`      - `Float.t -> Float.t -> bool`
-6. `lte`     - `Float.t -> Float.t -> bool`
-7. `gte`     - `Float.t -> Float.t -> bool`
-8. `gt`      - `Float.t -> Float.t -> bool`
-9. `mul`     - `Float.t -> Float.t -> Float.t`
-10. `div`    - `Float.t -> Float.t -> Float.t`
-11. `modulo` - `Float.t -> Float.t -> Float.t`
+1. `new`      - `int -> int -> Float.t`
+2. `inverse`  - `Float.t -> Float.t`
+3. `add`      - `Float.t -> Float.t -> Float.t`
+4. `sub`      - `Float.t -> Float.t -> Float.t`
+5. `lt`       - `Float.t -> Float.t -> bool`
+6. `lte`      - `Float.t -> Float.t -> bool`
+7. `gte`      - `Float.t -> Float.t -> bool`
+8. `gt`       - `Float.t -> Float.t -> bool`
+9. `mul`      - `Float.t -> Float.t -> Float.t`
+10. `div`     - `Float.t -> Float.t -> Float.t`
+11. `modulo`  - `Float.t -> Float.t -> Float.t`
+12. `resolve` - `Float.t -> nat -> int`
 
 `TrigoFloat` module
 1. `sinus`   - `Float.t * nat -> Float.t`
